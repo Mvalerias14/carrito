@@ -6,6 +6,7 @@ package mx.itson.carrito.ui;
 
 import java.util.Scanner;
 import mx.itson.carrito.entidades.Carro;
+import mx.itson.carrito.enums.TipoMotor;
 
 /**
  *
@@ -29,6 +30,8 @@ public class Main {
         bmw.setColor("Negro");
         bmw.setAnio(2021);
         bmw.setKilometraje(10000);
+        bmw.setTipoMotor(TipoMotor.HIBRIDO);
+        
             // Invocamos al metodo contenico en la clase carro 
         double tiempo = bmw.calcularTiempo(distancia, veocidad);
         System.out.println("El tiempo que le tomara al carro "+ bmw.getMarca() + " de color " + bmw.getColor() + " y el anio sera " + bmw.getAnio() + " sera " + tiempo + " y ahora su kilometraje es de " + bmw.getKilometraje());
